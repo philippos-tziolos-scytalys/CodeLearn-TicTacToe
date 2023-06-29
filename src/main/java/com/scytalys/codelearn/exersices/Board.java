@@ -39,30 +39,6 @@ public class Board {
         }
     }
 
-    public boolean isTicTacToe() {
-        if (board[0][1] == board[0][5] && board[0][1] == board[0][9]) {
-            return true;
-        } else if (board[2][1] == board[2][5] && board[2][1] == board[2][9]) {
-            return true;
-        } else if (board[4][1] == board[4][5] && board[4][1] == board[4][9]) {
-            return true;
-        } else if (board[0][1] == board[2][1] && board[0][1] == board[4][1]) {
-            return true;
-        } else if (board[0][5] == board[2][5] && board[0][5] == board[4][5]) {
-            return true;
-        } else if (board[0][9] == board[2][9] && board[0][9] == board[4][9]) {
-            return true;
-        } else if (board[0][1] == board[2][5] && board[0][1] == board[4][5]) {
-            return true;
-        } else if (board[4][1] == board[2][5] && board[4][1] == board[0][9]) {
-            return true;
-        } else if (availableMoves.isEmpty()) {
-            return false;
-        } else {
-            return false;
-        }
-    }
-
     public boolean isTicTacToe(char currentPlayer) {
         if (board[0][1] == board[0][5] && board[0][1] == board[0][9]) {
             System.out.println("Player " + currentPlayer + " Congratulations, you won!!!");
