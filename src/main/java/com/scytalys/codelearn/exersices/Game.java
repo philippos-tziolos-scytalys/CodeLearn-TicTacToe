@@ -6,7 +6,6 @@ public class Game {
     private final Scanner scan;
     private final Board board;
     private final char[] player;
-    private final boolean running;
 
     public Game() {
         running = true;
