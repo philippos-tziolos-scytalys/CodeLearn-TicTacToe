@@ -8,7 +8,6 @@ public class Game {
     private final char[] player;
 
     public Game() {
-        running = true;
         scan = new Scanner(System.in);
         board = new Board();
         player = new char[2];
